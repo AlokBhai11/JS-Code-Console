@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteJourney </title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h2><span style="color:#007acc">Byte</span>Journey </h2>
+        </div>
+        <nav class="nav-menu">
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <label>JavaScript</label>
+                    <ul id="js-select"></ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="body-container">
+        <div class="tabs">
+            <span id="tabs"></span>
+            <button class="run-btn" onclick="runCode()">Run</button>
+        </div>
+        <div class="card">
+            <div id="code-editor"></div>
+            <div class="output"></div>
+        </div>
+        <div class="statusBar" id="statusBar"><span id="cursorStatus"></span><span>JavaScript | UTF-8 | Ready</span></div>
+    </div>
+    <h2></h2>
+    <script src="libs/loader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
